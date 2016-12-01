@@ -24,6 +24,7 @@ public class ExampleMod
     	Block testBlock = new TestBlock(Blocks.dirt.getMaterial()).setHardness(2.5F).setStepSound(Blocks.dirt.stepSound).setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(MODID + ":" + "testBlock").setBlockName("Super toller Block");
     	GameRegistry.addRecipe(new ItemStack(Item.getItemById(264)),"xxx","xxx","xxx",'x',new ItemStack(Block.getBlockById(3)));
     	GameRegistry.addShapelessRecipe(new ItemStack(Block.getBlockFromName("Super toller Block")), new Object[] {Blocks.dirt, new ItemStack(Blocks.dirt, 5)});
+    	GameRegistry.addShapelessRecipe(new ItemStack(Block.getBlockFromName("Super toller Block")), new Object[] {Blocks.stone, new ItemStack(Blocks.stone, 5)});
     	GameRegistry.registerBlock(testBlock, "Supertoller Block");
     }
 }
